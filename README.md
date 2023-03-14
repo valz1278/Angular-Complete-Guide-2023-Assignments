@@ -1,0 +1,2 @@
+# Angular-Complete-Guide-2023-Assignments
+ This repository contains all of the assignments and projects I completed as part of the Angular - The Complete Guide (2023 Edition) course on Udemy. The goal of this repository is to organize and document my progress throughout the course and to have a central location to store and access all of my work. The assignments and projects in this repository mainly relate to Angular.

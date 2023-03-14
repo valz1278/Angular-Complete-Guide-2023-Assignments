@@ -1,8 +1,0 @@
-<button (click)="onClick()">Display Details</button>
-<p *ngIf="visible">This is the paragraph</p>
-<div
-  *ngFor="let click of clickLog"
-  [ngStyle]="{'background-color': setBackgroundColor(click)}"
-  [ngClass]="{'white-text': click >= 5}">
-  Logged clicks: {{ click }}
-</div>

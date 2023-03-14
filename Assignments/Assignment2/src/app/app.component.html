@@ -1,0 +1,5 @@
+<div>
+  Username: <input [(ngModel)]="username"/>
+  <p>{{ username }}</p>
+  <button [disabled]="!username" (click)="clearUsername()">Clear Username</button>
+</div>

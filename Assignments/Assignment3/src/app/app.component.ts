@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Assignment3';
+  visible = false;
+  clickLog: number[] = [];
+
+  onClick() {
+    this.visible = !this.visible;
+    this.clickLog.push(this.clickLog.length + 1);
+  }
+
+  setBackgroundColor(click: number) {
+    return click >= 5 ? 'blue' : 'transparent';
+  }
 }

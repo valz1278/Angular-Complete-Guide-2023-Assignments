@@ -16,13 +16,15 @@ export class AuthGuard {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
-    this.authService.isAuthenticated().then((authenticated: boolean) => {
-      if (authenticated) return true;
+    return this.authService.isAuthenticated().then((authenticated: boolean) => {
+      if (authenticated) {
+        return true;
+      }
       else {
         this.router.navigate(['/']);
+        return false;
       }
     });
-    return false;
   }
 
   canActivateChild(
